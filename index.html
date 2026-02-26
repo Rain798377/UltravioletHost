@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ultraviolet</title>
+</head>
+<body>
+  <h1>Ultraviolet Proxy</h1>
+  <input id="url" placeholder="https://example.com">
+  <button onclick="go()">Go</button>
+
+  <script>
+    function go() {
+      const url = document.getElementById("url").value;
+      location.href = "/service/" + encodeURIComponent(url);
+    }
+  </script>
+</body>
+</html>
